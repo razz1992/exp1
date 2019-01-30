@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const basicAuth = require('express-basic-auth')
 const os = require('os');
 
 var port = 5000
@@ -15,7 +16,10 @@ app.get('/', (req, res) => {
     res.send('An alligator approaches!');
     log( "New request GET / at " + Date.now() )
 });
-
+ 
+app.use(basicAuth({
+    users: { 'admin': 'supersecret' }
+}))
 app.get('/machinedetails', (req, res) => {
    var machDetails = {}
     machDetails = {
