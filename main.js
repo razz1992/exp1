@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
-
+var port = 5000
+port = process.env.PORT || port
 
 // Loggger
 function log(x) {
@@ -13,4 +14,4 @@ app.get('/', (req, res) => {
     log( "New request at" + Date.now() )
 });
 
-app.listen(3000, () => log('app listening on port 3000!'));
+app.listen(port, () => log('app listening on port ', port));
