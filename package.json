@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "main.js",
   "scripts": {
-    "start": "node --inspect-brk http://317919c7.ngrok.io:${process.env.PORT}",
+    "start": "node --inspect-brk http://317919c7.ngrok.io:${process.env.PORT} main.js",
     "pretest": "npm run lint",
     "test": "",
     "test-contract": "",
