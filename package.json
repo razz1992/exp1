@@ -4,11 +4,11 @@
   "main": "main.js",
   "scripts": {
     "start": "node main.js",
-    "pretest": "npm run lint",
+    "pretest": "",
     "test": "",
     "test-contract": "",
     "test-no-coverage": "",
-    "lint": "eslint main.js",
+    "lint": "",
     "lint-checkstyle-XML-log": "eslint -f checkstyle . || true",
     "posttest": ""
   },
