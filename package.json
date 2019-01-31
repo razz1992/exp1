@@ -8,7 +8,7 @@
     "test": "",
     "test-contract": "",
     "test-no-coverage": "",
-    "lint": "eslint .",
+    "lint": "eslint main.js",
     "lint-checkstyle-XML-log": "eslint -f checkstyle . || true",
     "posttest": ""
   },
